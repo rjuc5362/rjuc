@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RJUC | রসিদ প্রিন্ট</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9fbe7;
+      padding: 20px;
+    }
+    .receipt {
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      border: 2px dashed #4caf50;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 8px #ccc;
+    }
+    h2, h3 {
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      margin: 8px 0;
+    }
+    .print-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .print-btn:hover {
+      background: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="receipt" id="receipt">
+    <h2>রংধনু যুব উন্নয়ন ক্লাব (RJUC)</h2>
+    <h3>টাকা জমার রসিদ</h3>
+    <hr>
+    <p><strong>রসিদ নম্বর:</strong> RJUC-R001</p>
+    <p><strong>সদস্যের নাম:</strong> কৃষ্ণ চন্দ্র বর্মন</p>
+    <p><strong>তারিখ:</strong> ১৪ জুলাই ২০২৫</p>
+    <p><strong>টাকার পরিমাণ:</strong> ৳২০০</p>
+    <p><strong>পেমেন্ট পদ্ধতি:</strong> বিকাশ</p>
+    <p><strong>গ্রহণকারী:</strong> RJUC একাউন্টস অফিসার</p>
+    <hr>
+    <p style="text-align:right;"><em>স্বাক্ষর: ____________________</em></p>
+  </div>
+
+  <button class="print-btn" onclick="window.print()">রসিদ প্রিন্ট করুন</button>
+
+</body>
+</html>
