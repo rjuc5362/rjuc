@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RJUC | Taka Payment</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #e8f5e9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2e7d32;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aaa;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #2e7d32;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>টাকা জমা ফর্ম</h1>
+
+  <form>
+    <label for="name">সদস্যের নাম:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="amount">টাকার পরিমাণ (৳):</label>
+    <input type="number" id="amount" name="amount" required>
+
+    <label for="date">তারিখ:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="method">পেমেন্ট পদ্ধতি:</label>
+    <select id="method" name="method">
+      <option>নগদ</option>
+      <option>বিকাশ</option>
+      <option>রকেট</option>
+      <option>অন্যান্য</option>
+    </select>
+
+    <button type="submit">জমা দিন</button>
+  </form>
+
+</body>
+</html>
